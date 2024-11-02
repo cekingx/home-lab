@@ -1,4 +1,5 @@
-# Home Lab Docker Images
+# Home Lab
+Ini adalah konfigurasi docker compose untuk Home Lab
 
 ## Ports
 - 10001 -> postgres
