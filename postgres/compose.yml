@@ -9,8 +9,6 @@ services:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data/pgdata
-    env_file:
-      - ../.env
 
   adminer:
     image: adminer
