@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:17
+    restart: always
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 10001:5432
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    env_file:
+      - ../.env
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 10002:8080
