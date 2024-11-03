@@ -1,2 +1,6 @@
 nextcloud/config
 .env
+.DS_Store
+nextcloud/.DS_Store
+nextcloud/data/
+postgres/data/
